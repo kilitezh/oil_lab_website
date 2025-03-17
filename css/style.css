@@ -1,0 +1,487 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Microsoft YaHei', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    margin-bottom: 15px;
+    color: #1a3a7a;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #1a3a7a;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #1a3a7a;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #0d2456;
+}
+
+/* 头部样式 */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+.logo p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 0;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    padding: 5px;
+    font-weight: 500;
+    position: relative;
+}
+
+nav ul li a:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #1a3a7a;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover:after {
+    width: 100%;
+}
+
+/* 首页英雄区域 */
+/* 视频背景样式 */
+.hero {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 保持视频比例并填充整个区域 */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* 半透明黑色遮罩 */
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+}
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* 关于实验室 */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-image {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 研究方向 */
+.research {
+    background-color: #f0f4f8;
+}
+
+.research-areas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.research-item {
+    background: #fff;
+    padding: 30px;
+    text-align: justify;
+    text-align-last: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.research-item:hover {
+    transform: translateY(-10px);
+}
+
+.research-item i {
+    font-size: 40px;
+    color: #1a3a7a;
+    margin-bottom: 20px;
+}
+
+/* 团队成员 */
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.member {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.member:hover {
+    transform: translateY(-5px);
+}
+
+.member img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.member h3 {
+    padding: 15px 15px 5px;
+    font-size: 18px;
+    min-height: 60px; /* 确保最小高度一致 */
+    display: flex;
+    align-items: center;
+}
+
+/* 为长名字特别设置较小字体 */
+.member h3.long-name {
+    font-size: 16px; /* 或更小，根据需要调整 */
+    line-height: 1.2; /* 减小行高，使两行名字更紧凑 */
+}
+
+.member p {
+    padding: 0 15px 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+
+/* 发表论文 */
+.publications {
+    background-color: #fff;
+}
+
+.publication-list {
+    margin-top: 40px;
+}
+
+.publication {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease;
+}
+
+.publication:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.publication h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.publication p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.publications .btn {
+    margin-top: 20px;
+}
+
+/* 联系我们 */
+.contact {
+    background-color: #f0f4f8;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.contact-details {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.contact-item i {
+    font-size: 20px;
+    color: #1a3a7a;
+    margin-right: 15px;
+    margin-top: 3px;
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+/* 页脚 */
+footer {
+    background-color: #1a3a7a;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ccc;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+    
+    nav ul {
+        margin-top: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 5px 10px;
+    }
+    
+    .about-content {
+        flex-direction: column;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+    }
+    
+    footer .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .hero h2 {
+        font-size: 36px;
+    }
+    
+    .hero p {
+        font-size: 18px;
+    }
+    
+    section {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 28px;
+    }
+    
+    .hero p {
+        font-size: 16px;
+    }
+    
+    section {
+        padding: 40px 0;
+    }
+}
+
+
+/* 首页视频区域 */
+.hero-video {
+    position: relative;
+    margin: 30px auto;
+    max-width: 700px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.hero-video video {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+}
+
+.video-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    padding: 20px;
+    text-align: center;
+}
+
+.video-overlay p {
+    color: #fff;
+    font-size: 16px;
+    margin: 0;
+    font-weight: 500;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .hero-video {
+        max-width: 90%;
+    }
+}

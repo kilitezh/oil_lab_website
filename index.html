@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optical Intelligence Lab - 光学智能实验室</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Optical Intelligence Lab</h1>
+                <p>探索光学与智能的前沿</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">首页</a></li>
+                    <li><a href="#about">关于实验室</a></li>
+                    <li><a href="#research">研究方向</a></li>
+                    <li><a href="#team">团队成员</a></li>
+                    <li><a href="#publications">发表论文</a></li>
+                    <li><a href="#contact">联系我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <!-- 添加视频背景 -->
+        <div class="video-background">
+            <video autoplay loop muted playsinline>
+                <source src="video/conv.mp4" type="video/mp4">
+            </video>
+            <div class="overlay"></div>
+        </div>
+        
+        <div class="container">
+            <h2>欢迎来到光学智能实验室</h2>
+            <p>致力于光学技术与人工智能交叉领域的创新研究</p>
+            <a href="#about" class="btn">了解更多</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>关于实验室</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Optical Intelligence Lab成立于2023年，是一个专注于光电技术与人工智能技术交叉创新研究的实验室。我们的使命是通过结合光电工程与人工智能技术，解决科学和工程领域的关键问题。</p>
+                    <p>实验室配备了先进的实验设备，计算资源充足，为研究人员提供了良好的科研环境。我们与国内外多家高校和企业保持紧密合作，共同推动光电智能技术的发展与应用。</p>
+                </div>
+                <div class="about-image">
+                    <img src="C:\Users\kilit\Desktop\TEST_TRAE\website\image\lab.png" alt="实验室照片">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="research" class="research">
+        <div class="container">
+            <h2>研究方向</h2>
+            <div class="research-areas">
+                <div class="research-item">
+                    <i class="fas fa-brain"></i>
+                    <h3>人工智能</h3>
+                    <p>探索人工智能前沿技术，包括自然语言处理、孪生网络、扩散模型等领域的创新应用。</p>
+                </div>
+                <div class="research-item">
+                    <i class="fas fa-eye"></i>
+                    <h3>计算机视觉</h3>
+                    <p>研究目标检测与跟踪、语义分割、自动驾驶等计算机视觉技术，赋能智能感知系统。</p>
+                </div>
+                <div class="research-item">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>深度学习</h3>
+                    <p>开发先进的深度学习模型和算法，解决遥感影像畸变修复、复杂环境目标跟踪、3D医学点云处理等难题。</p>
+                </div>
+                <div class="research-item">
+                    <i class="fas fa-robot"></i>
+                    <h3>机器人与嵌入式系统</h3>
+                    <p>研究智能机器人系统，包括自主导航、机器人视觉感知和人机交互等关键技术。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="team">
+        <div class="container">
+            <h2>团队成员</h2>
+            <div class="team-members">
+                <div class="member">
+                    <img src="images/professor.jpg" alt="实验室主任">
+                    <h3>黄博</h3>
+                    <p>实验室导师</p>
+                    <p>专注于基于深度学习、对抗学习等人工智能理论的计算机视觉应用研究</p>
+                </div>
+                <div class="member">
+                    <img src="images/researcher1.jpg" alt="研究员">
+                    <h3>张宏</h3>
+                    <p>实验室成员</p>
+                    <p>研究方向：红外小目标检测与跟踪</p>
+                </div>
+                <div class="member">
+                    <img src="images/researcher2.jpg" alt="研究员">
+                    <h3>邝亿豪</h3>
+                    <p>实验室成员</p>
+                    <p>研究方向：3D点云目标跟踪</p>
+                </div>
+                <div class="member">
+                    <img src="images/phd1.jpg" alt="博士生">
+                    <h3>王佳琪</h3>
+                    <p>实验室成员</p>
+                    <p>研究方向：基于自然语言的目标检测与跟踪</p>
+                </div>
+                <div class="member">
+                    <img src="images/phd2.jpg" alt="博士生">
+                    <h3 class="long-name">Muhammad Aqib Abad </h3>
+                    <p>实验室成员</p>
+                    <p>研究方向：Aerial Target Tracking from UAVs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="publications" class="publications">
+        <div class="container">
+            <h2>发表论文</h2>
+            <div class="publication-list">
+                <div class="publication">
+                    <h3>SiamATL: Online update of siamese tracking network via attentional transfer learning</h3>
+                    <p>Huang B., Xu T., Shen Z., Jiang S., Zhao B., Bian Z.</p>
+                    <p>IEEE Transactions on Cybernetics (IEEE TCYB), 2021, 52(8): 7527-7540</p>
+                </div>
+                <div class="publication">
+                    <h3>Learning context restrained correlation tracking filters via adversarial negative instance generation</h3>
+                    <p>Huang B., Xu T., Li J., Luo F., Qin Q., Chen J.</p>
+                    <p>IEEE Transactions on Neural Networks and Learning Systems (IEEE TNNLS), 2021</p>
+                </div>
+                <div class="publication">
+                    <h3>Transfer learning-based discriminative correlation filter for visual tracking</h3>
+                    <p>Huang B., Xu T., Li J., Shen Z., Chen Y.</p>
+                    <p>Pattern Recognition (PR), 2020, 100: 107157</p>
+                </div>
+                <div class="publication">
+                    <h3>Robust visual tracking via constrained multi-kernel correlation filters</h3>
+                    <p>Huang B., Xu T., Jiang S., Chen Y., Bai Y.</p>
+                    <p>IEEE Transactions on Multimedia (IEEE TMM), 2020, 22(11): 2820-2832</p>
+                </div>
+                <div class="publication">
+                    <h3>SiamSTA: Spatio-temporal attention based siamese tracker for tracking UAVs</h3>
+                    <p>Huang B., Chen J., Xu T., Wang Y., Jiang S., Wang Y., Wang L., Li J.</p>
+                    <p>IEEE International Conference on Computer Vision (ICCV) Workshops, 2021: 1204-1212（Oral, Best paper award，共同一作）</p>
+                </div>
+                <div class="publication">
+                    <h3>Context constraint and pattern memory for long-term correlation tracking</h3>
+                    <p>Huang B., Xu T., Liu B., Yuan B.</p>
+                    <p>Neurocomputing, 2020, 377: 1-15</p>
+                </div>
+                <div class="publication">
+                    <h3>BSCF: Learning background suppressed correlation filter tracker for wireless multimedia sensor networks</h3>
+                    <p>Huang B., Xu T., Shen Z., Jiang S., Li J.</p>
+                    <p>Ad Hoc Networks, 2021, 111: 102340</p>
+                </div>
+                <div class="publication">
+                    <h3>Learning spatio-temporal attention based siamese network for tracking UAVs in the wild</h3>
+                    <p>Chen J., Huang B., Li J., Wang Y., Ren M., Xu T.</p>
+                    <p>Remote Sensing, 2022, 14 (8): 1797</p>
+                </div>
+            </div>
+            <a href="#" class="btn">查看更多论文</a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>联系我们</h2>
+            <div class="contact-info">
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>地址：重庆大学光电工程学院，虎溪校区信息楼B338室</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>邮箱：huangbo0326@cqu.edu.cn</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>电话：+86-188-0137-8853</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <input type="text" placeholder="姓名" required>
+                        <input type="email" placeholder="邮箱" required>
+                        <input type="text" placeholder="主题">
+                        <textarea placeholder="留言内容" required></textarea>
+                        <button type="submit" class="btn">发送消息</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Optical Intelligence Lab. 保留所有权利。</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-weixin"></i></a>
+                <a href="#"><i class="fab fa-weibo"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
